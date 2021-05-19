@@ -968,11 +968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\inconso docs\\Berufsschule\\LF6 - Software\\C#\\Autoverwaltung\\Autoverwaltung\\Autoverwaltung.csproj",
+      "projectUniqueName": "D:\\private docs\\GIT\\Schule\\Autoverwaltung\\Autoverwaltung\\Autoverwaltung.csproj",
       "projectName": "Autoverwaltung",
-      "projectPath": "D:\\inconso docs\\Berufsschule\\LF6 - Software\\C#\\Autoverwaltung\\Autoverwaltung\\Autoverwaltung.csproj",
+      "projectPath": "D:\\private docs\\GIT\\Schule\\Autoverwaltung\\Autoverwaltung\\Autoverwaltung.csproj",
       "packagesPath": "C:\\Users\\MEppinger\\.nuget\\packages\\",
-      "outputPath": "D:\\inconso docs\\Berufsschule\\LF6 - Software\\C#\\Autoverwaltung\\Autoverwaltung\\obj\\",
+      "outputPath": "D:\\private docs\\GIT\\Schule\\Autoverwaltung\\Autoverwaltung\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

@@ -249,7 +249,6 @@
             this.labelWelcomeScreen.Size = new System.Drawing.Size(610, 187);
             this.labelWelcomeScreen.TabIndex = 0;
             this.labelWelcomeScreen.Text = resources.GetString("labelWelcomeScreen.Text");
-            this.labelWelcomeScreen.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonClearTextfields
             // 

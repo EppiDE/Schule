@@ -17,6 +17,15 @@ using System.IO;
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 namespace Autoverwaltung
+    /* TODO: Speichern der Werte ermöglichen. Erst als Stream .csv, dann als SQL
+     *       Prüfen ob ein String ein Kommata beinhaltet
+     *       Prüfen ob Spitzname schon vorhanden
+     *       Prüfen ob Jahreszahl realistisch
+     *       Hotkeys anlegen
+     *       UI 
+     *       Prüffenster für Löschung
+     *       Vervollständigung für gängige Farben
+    */
 {
     public partial class FormVerwaltung : Form
     {
@@ -24,7 +33,7 @@ namespace Autoverwaltung
         {
             InitializeComponent();
         }
-
+        // Struktur und Liste für die textBox
         public struct strucAuto
         {
             public string Marke;
@@ -33,50 +42,49 @@ namespace Autoverwaltung
             public int Baujahr;
             public string Spitzname;
             public double Kaufpreis;
-            /*public override string ToString()
+            public override string ToString()
             {
                 return Spitzname;
-            }*/
+            }
             
         }
-        
-
         List<strucAuto> listAuto = new List<strucAuto>();
-
-        private void buttonNeuAnlegen_Click(object sender, EventArgs e)
-        {
-            addListToListbox(addItemToList());
-        }
-
+        // Methode zum hinzufügen eines strucAuto zur Liste
         private strucAuto addItemToList()
-        {
+        {   //Anlegen der Variablen
             strucAuto scLocalAuto = new strucAuto();
             int intParsedValue;
             double dbParsedValue;
             scLocalAuto.Marke = textBoxMarke.Text;
             scLocalAuto.Modell = textBoxModell.Text;
             scLocalAuto.Farbe = textBoxFarbe.Text;
+            //Prüfen ob ein Spitzname vorhanden
             if (textBoxSpitzname.Text.Length > 0)
             {
                 scLocalAuto.Spitzname = textBoxSpitzname.Text;
             }
+            // Generischer Spitzname der in der Liste angezeigt wird, sofern keiner eingegeben wurde
             else
             {
-                scLocalAuto.Spitzname = "404";
+                scLocalAuto.Spitzname = "Auto " + (listBoxGarageAutos.Items.Count+1);
             }
-
+            // Testen ob Eingabe korrekt
+            // Fall wenn korrekt
             if (int.TryParse(textBoxBaujahr.Text, out intParsedValue))
             {
                 scLocalAuto.Baujahr = Convert.ToInt32(textBoxBaujahr.Text);
             }
+            // Fall wenn KEINE Angabe gemacht wurde
             else if (textBoxBaujahr == null || !int.TryParse(textBoxBaujahr.Text, out intParsedValue))
             {
                 scLocalAuto.Baujahr = 0;
             }
+            // Fall wenn EIngabe falsch bspw. Buchstabe
             if (textBoxBaujahr.Text.Length > 0 && !int.TryParse(textBoxBaujahr.Text, out intParsedValue))
             {
                 MessageBox.Show("Ungültige Jahreszahl!\r\nBitte Aktualisieren!");
             }
+            // Selbe für den Kaufpreis
             if (double.TryParse(textBoxKaufpreis.Text, out dbParsedValue))
             {
                 scLocalAuto.Kaufpreis = Convert.ToDouble(textBoxKaufpreis.Text);
@@ -91,6 +99,7 @@ namespace Autoverwaltung
             }
             return scLocalAuto;
         }
+        //Hinzufügen der Liste zur Listbox
         private void addListToListbox(strucAuto lscAuto)
         {
             listBoxGarageAutos.Items.Clear();
@@ -100,7 +109,12 @@ namespace Autoverwaltung
                 listBoxGarageAutos.Items.Add(localstrucAuto);
             }
         }
-
+        private void buttonNeuAnlegen_Click(object sender, EventArgs e)
+        {
+            addListToListbox(addItemToList());
+            clearTextboxes();
+        }
+        
         private void buttonAktualisieren_Click(object sender, EventArgs e)
         {
             int localSelected = listBoxGarageAutos.SelectedIndex;
@@ -129,8 +143,9 @@ namespace Autoverwaltung
             textBoxFarbe.Text = localScAuto.Farbe;
             textBoxKaufpreis.Text = Convert.ToString(localScAuto.Kaufpreis);
             textBoxMarke.Text = localScAuto.Marke;
-            textBoxKaufpreis.Text = localScAuto.Spitzname;
+            textBoxSpitzname.Text = localScAuto.Spitzname;
         }
+        //Methode zum leeren der Textfelder
         private void clearTextboxes()
         {
             textBoxBaujahr.ResetText();
@@ -140,13 +155,14 @@ namespace Autoverwaltung
             textBoxModell.ResetText();
             textBoxSpitzname.ResetText();
         }
+        //Eventhandler zum anzeigen der ausgewählten Autos
         private void listGarageAutos_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBoxGarageAutos.SelectedIndex < 0)
             {
                 buttonAktualisieren.Enabled = false;
                 buttonLoeschen.Enabled = false;
-                //clearTextboxes();
+                clearTextboxes();
             }
             else
             {
@@ -155,16 +171,16 @@ namespace Autoverwaltung
                 showSelectedItem();
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // Schließen des Welcome Panels
+        // TODO: Erstellen eines Häkchens, das den WelcomeScreen komplett deaktiviert
         private void buttonOkay_Click(object sender, EventArgs e)
         {
             panelWelcomeScreen.Enabled = false;
             panelWelcomeScreen.Visible = false;
+        }
+        private void buttonClearTextfields_Click(object sender, EventArgs e)
+        {
+            clearTextboxes();
         }
 
         private void saveStreamAsFile(string filePath, Stream inputStream, string fileName)
@@ -180,11 +196,6 @@ namespace Autoverwaltung
             {
                 inputStream.CopyTo(outputFileStream);
             }
-        }
-
-        private void buttonClearTextfields_Click(object sender, EventArgs e)
-        {
-            clearTextboxes();
-        }
+        }       
     }
 }

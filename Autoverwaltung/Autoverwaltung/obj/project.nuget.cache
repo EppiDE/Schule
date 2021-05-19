@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b3huiKWgnEMqyFvJs2TZwsBesw8qnPHQFtxGfUUPvxAcQLq8vDImYDKzWn4Cs97KBbiBqIlueDq9mv1uZG9KIg==",
+  "dgSpecHash": "YoKepJTLWu9Mv5jnCoXo/hTcmAUWlW6RJCwZIjlMeV0cya7dKo+jSYbyofbL+PayN86WRPxsJABiYrxnwEv2ZQ==",
   "success": true,
-  "projectFilePath": "D:\\inconso docs\\Berufsschule\\LF6 - Software\\C#\\Autoverwaltung\\Autoverwaltung\\Autoverwaltung.csproj",
+  "projectFilePath": "D:\\private docs\\GIT\\Schule\\Autoverwaltung\\Autoverwaltung\\Autoverwaltung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.2\\microsoft.data.sqlclient.2.1.2.nupkg.sha512",
     "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.data.sqlclient.sni\\2.1.1\\microsoft.data.sqlclient.sni.2.1.1.nupkg.sha512",

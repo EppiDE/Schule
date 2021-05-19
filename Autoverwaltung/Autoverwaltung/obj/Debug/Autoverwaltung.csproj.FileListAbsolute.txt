@@ -28,3 +28,33 @@ D:\inconso docs\Berufsschule\LF6 - Software\C#\Autoverwaltung\Autoverwaltung\bin
 D:\inconso docs\Berufsschule\LF6 - Software\C#\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.IdentityModel.Tokens.dll
 D:\inconso docs\Berufsschule\LF6 - Software\C#\Autoverwaltung\Autoverwaltung\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
 D:\inconso docs\Berufsschule\LF6 - Software\C#\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.csproj.CopyComplete
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Autoverwaltung.exe.config
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Autoverwaltung.exe
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Autoverwaltung.pdb
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.Data.SqlClient.pdb
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.Identity.Client.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.csprojAssemblyReference.cache
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.FormVerwaltung.resources
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.Properties.Resources.resources
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.csproj.GenerateResource.cache
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.csproj.CoreCompileInputs.cache
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.csproj.CopyComplete
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.exe
+D:\private docs\GIT\Schule\Autoverwaltung\Autoverwaltung\obj\Debug\Autoverwaltung.pdb
