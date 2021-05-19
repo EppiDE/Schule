@@ -49,7 +49,7 @@ namespace Autoverwaltung
             
         }
         List<strucAuto> listAuto = new List<strucAuto>();
-        public string[] lines = File.ReadAllLines(@"../../../scores.csv");
+        public string[] stArrayAuto = File.ReadAllLines(@"../../../scores.csv");
         int exam = 3;
         // Methode zum hinzufügen eines strucAuto zur Liste
         private strucAuto addItemToList()
@@ -201,25 +201,30 @@ namespace Autoverwaltung
         }      
         private void readCsvFile(string path)
         {
-           lines = File.ReadAllLines(path); // @"../../../scores.csv"
+           stArrayAuto = File.ReadAllLines(path); // @"../../../scores.csv"
         }
         private void csvFileSafe(IEnumerable<string> strs)
         {
-            IEnumerable<IEnumerable<int>> multiColQuery =
+            IEnumerable<IEnumerable<string>> multiColQuery =
            from line in strs
            let elements = line.Split(',')
-           let scores = elements.Skip(1)
-           select (from str in scores
-                   select Convert.ToInt32(str));
-            var results = multiColQuery.ToList();
-            int columnCount = results[0].Count();
-            for (int column = 0; column < columnCount; column++)
-            {
-                var results2 = from row in results
-                               select row.ElementAt(column);
-                double average = results2.Average();
-                int max = results2.Max();
-                int min = results2.Min();
+           //let scores = elements.Skip(1)
+           select (from str in elements
+                   select str);
+            var stRac = multiColQuery.ToList();
+            for (int i = 0; i < 5, i++) {
+                var stRad = from row in stRad
+                            select row.ElementAt(i);
+                /*var results = multiColQuery.ToList();
+                int columnCount = results[0].Count();
+                for (int column = 0; column < columnCount; column++)
+                {
+                    var results2 = from row in results
+                                   select row.ElementAt(column);
+                    double average = results2.Average();
+                    int max = results2.Max();
+                    int min = results2.Min();
+                }*/
             }
         }
     }
