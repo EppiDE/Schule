@@ -1,0 +1,53 @@
+[1mdiff --git a/.vs/slnx.sqlite b/.vs/slnx.sqlite[m
+[1mindex 308df49..e85c40d 100644[m
+Binary files a/.vs/slnx.sqlite and b/.vs/slnx.sqlite differ
+[1mdiff --git a/Autoverwaltung/.vs/Autoverwaltung/v16/.suo b/Autoverwaltung/.vs/Autoverwaltung/v16/.suo[m
+[1mindex 34472c7..23e7178 100644[m
+Binary files a/Autoverwaltung/.vs/Autoverwaltung/v16/.suo and b/Autoverwaltung/.vs/Autoverwaltung/v16/.suo differ
+[1mdiff --git a/Autoverwaltung/Autoverwaltung/Form1.cs b/Autoverwaltung/Autoverwaltung/Form1.cs[m
+[1mindex 462f863..0c38047 100644[m
+[1m--- a/Autoverwaltung/Autoverwaltung/Form1.cs[m
+[1m+++ b/Autoverwaltung/Autoverwaltung/Form1.cs[m
+[36m@@ -49,6 +49,8 @@[m [mnamespace Autoverwaltung[m
+             [m
+         }[m
+         List<strucAuto> listAuto = new List<strucAuto>();[m
+[32m+[m[32m        public string[] lines = File.ReadAllLines(@"../../../scores.csv");[m[41m[m
+[32m+[m[32m        int exam = 3;[m[41m[m
+         // Methode zum hinzufügen eines strucAuto zur Liste[m
+         private strucAuto addItemToList()[m
+         {   //Anlegen der Variablen[m
+[36m@@ -196,6 +198,29 @@[m [mnamespace Autoverwaltung[m
+             {[m
+                 inputStream.CopyTo(outputFileStream);[m
+             }[m
+[31m-        }       [m
+[32m+[m[32m        }[m[41m      [m
+[32m+[m[32m        private void readCsvFile(string path)[m[41m[m
+[32m+[m[32m        {[m[41m[m
+[32m+[m[32m           lines = File.ReadAllLines(path); // @"../../../scores.csv"[m[41m[m
+[32m+[m[32m        }[m[41m[m
+[32m+[m[32m        private void csvFileSafe(IEnumerable<string> strs)[m[41m[m
+[32m+[m[32m        {[m[41m[m
+[32m+[m[32m            IEnumerable<IEnumerable<int>> multiColQuery =[m[41m[m
+[32m+[m[32m           from line in strs[m[41m[m
+[32m+[m[32m           let elements = line.Split(',')[m[41m[m
+[32m+[m[32m           let scores = elements.Skip(1)[m[41m[m
+[32m+[m[32m           select (from str in scores[m[41m[m
+[32m+[m[32m                   select Convert.ToInt32(str));[m[41m[m
+[32m+[m[32m            var results = multiColQuery.ToList();[m[41m[m
+[32m+[m[32m            int columnCount = results[0].Count();[m[41m[m
+[32m+[m[32m            for (int column = 0; column < columnCount; column++)[m[41m[m
+[32m+[m[32m            {[m[41m[m
+[32m+[m[32m                var results2 = from row in results[m[41m[m
+[32m+[m[32m                               select row.ElementAt(column);[m[41m[m
+[32m+[m[32m                double average = results2.Average();[m[41m[m
+[32m+[m[32m                int max = results2.Max();[m[41m[m
+[32m+[m[32m                int min = results2.Min();[m[41m[m
+[32m+[m[32m            }[m[41m[m
+[32m+[m[32m        }[m[41m[m
+     }[m
+ }[m
+[1mdiff --git a/Autoverwaltung/Autoverwaltung/obj/Debug/Autoverwaltung.csprojAssemblyReference.cache b/Autoverwaltung/Autoverwaltung/obj/Debug/Autoverwaltung.csprojAssemblyReference.cache[m
+[1mindex 01fc265..e3b6d63 100644[m
+Binary files a/Autoverwaltung/Autoverwaltung/obj/Debug/Autoverwaltung.csprojAssemblyReference.cache and b/Autoverwaltung/Autoverwaltung/obj/Debug/Autoverwaltung.csprojAssemblyReference.cache differ

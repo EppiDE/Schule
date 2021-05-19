@@ -49,6 +49,8 @@ namespace Autoverwaltung
             
         }
         List<strucAuto> listAuto = new List<strucAuto>();
+        public string[] lines = File.ReadAllLines(@"../../../scores.csv");
+        int exam = 3;
         // Methode zum hinzufügen eines strucAuto zur Liste
         private strucAuto addItemToList()
         {   //Anlegen der Variablen
@@ -196,6 +198,29 @@ namespace Autoverwaltung
             {
                 inputStream.CopyTo(outputFileStream);
             }
-        }       
+        }      
+        private void readCsvFile(string path)
+        {
+           lines = File.ReadAllLines(path); // @"../../../scores.csv"
+        }
+        private void csvFileSafe(IEnumerable<string> strs)
+        {
+            IEnumerable<IEnumerable<int>> multiColQuery =
+           from line in strs
+           let elements = line.Split(',')
+           let scores = elements.Skip(1)
+           select (from str in scores
+                   select Convert.ToInt32(str));
+            var results = multiColQuery.ToList();
+            int columnCount = results[0].Count();
+            for (int column = 0; column < columnCount; column++)
+            {
+                var results2 = from row in results
+                               select row.ElementAt(column);
+                double average = results2.Average();
+                int max = results2.Max();
+                int min = results2.Min();
+            }
+        }
     }
 }
