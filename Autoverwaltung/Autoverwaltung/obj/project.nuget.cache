@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "b3huiKWgnEMqyFvJs2TZwsBesw8qnPHQFtxGfUUPvxAcQLq8vDImYDKzWn4Cs97KBbiBqIlueDq9mv1uZG9KIg==",
+  "success": true,
+  "projectFilePath": "D:\\inconso docs\\Berufsschule\\LF6 - Software\\C#\\Autoverwaltung\\Autoverwaltung\\Autoverwaltung.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.2\\microsoft.data.sqlclient.2.1.2.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.data.sqlclient.sni\\2.1.1\\microsoft.data.sqlclient.sni.2.1.1.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.8.0\\microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\MEppinger\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}
