@@ -1,0 +1,10 @@
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\bin\Debug\AdressVerwaltung.exe.config
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\bin\Debug\AdressVerwaltung.exe
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\bin\Debug\AdressVerwaltung.pdb
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.csprojAssemblyReference.cache
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.FormEmOr.resources
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.Properties.Resources.resources
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.csproj.GenerateResource.cache
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.csproj.CoreCompileInputs.cache
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.exe
+C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.pdb
