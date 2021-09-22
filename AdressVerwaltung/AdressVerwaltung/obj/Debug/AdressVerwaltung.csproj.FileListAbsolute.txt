@@ -8,3 +8,13 @@ C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\Adre
 C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.csproj.CoreCompileInputs.cache
 C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.exe
 C:\Users\MEppinger\source\repos\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.pdb
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\bin\Debug\AdressVerwaltung.exe.config
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\bin\Debug\AdressVerwaltung.exe
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\bin\Debug\AdressVerwaltung.pdb
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.csproj.AssemblyReference.cache
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.FormEmOr.resources
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.Properties.Resources.resources
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.csproj.GenerateResource.cache
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.csproj.CoreCompileInputs.cache
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.exe
+D:\inconso docs\Repo SVN\GIT\AdressVerwaltung\AdressVerwaltung\obj\Debug\AdressVerwaltung.pdb

@@ -16,6 +16,14 @@ namespace AdressVerwaltung
         string sPostition;
         public struct stAddress
         {
+            public stAddress(string cat, string street, string num, string zip, string add)
+            {
+                sCategory = cat;
+                sStreet = street;
+                sNumber = num;
+                sZipcode = zip;
+                sAdditional = add;
+            }
             string sCategory;
             string sStreet;
             string sNumber;
@@ -43,6 +51,6 @@ namespace AdressVerwaltung
         }
         public string SPostition { get => sPostition; set => sPostition = value; }
         public DateTime DtBirthday { get => dtBirthday; set => dtBirthday = value; }
-        public static int EmpID { get => empID;}
+        public static int EmpID { get => empID; set => empID = value; }
     }
 }
