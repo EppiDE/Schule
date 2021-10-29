@@ -31,6 +31,13 @@ namespace AdressVerwaltung
         {
             this.labelDisplayNames = new System.Windows.Forms.Label();
             this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
+            this.persID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPreName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSurName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
@@ -62,13 +69,7 @@ namespace AdressVerwaltung
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.buttonCloseApp = new System.Windows.Forms.Button();
-            this.persID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPreName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSurName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelSavedAddress = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees)).BeginInit();
             this.panelAddEmployee.SuspendLayout();
             this.SuspendLayout();
@@ -102,48 +103,109 @@ namespace AdressVerwaltung
             this.dataGridViewEmployees.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmp_CellClick);
             this.dataGridViewEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmp_CellContentClick);
             // 
+            // persID
+            // 
+            this.persID.HeaderText = "Personal ID";
+            this.persID.MinimumWidth = 6;
+            this.persID.Name = "persID";
+            this.persID.ReadOnly = true;
+            this.persID.Width = 125;
+            // 
+            // colPreName
+            // 
+            this.colPreName.HeaderText = "Prename";
+            this.colPreName.MinimumWidth = 6;
+            this.colPreName.Name = "colPreName";
+            this.colPreName.ReadOnly = true;
+            this.colPreName.Width = 125;
+            // 
+            // colSurName
+            // 
+            this.colSurName.HeaderText = "Surname";
+            this.colSurName.MinimumWidth = 6;
+            this.colSurName.Name = "colSurName";
+            this.colSurName.ReadOnly = true;
+            this.colSurName.Width = 125;
+            // 
+            // colBirthday
+            // 
+            this.colBirthday.HeaderText = "Birthday";
+            this.colBirthday.MinimumWidth = 6;
+            this.colBirthday.Name = "colBirthday";
+            this.colBirthday.ReadOnly = true;
+            this.colBirthday.Width = 125;
+            // 
+            // colPosition
+            // 
+            this.colPosition.HeaderText = "Position";
+            this.colPosition.MinimumWidth = 6;
+            this.colPosition.Name = "colPosition";
+            this.colPosition.ReadOnly = true;
+            this.colPosition.Width = 125;
+            // 
+            // colAddress
+            // 
+            this.colAddress.HeaderText = "Primary Address";
+            this.colAddress.MinimumWidth = 6;
+            this.colAddress.Name = "colAddress";
+            this.colAddress.ReadOnly = true;
+            this.colAddress.Width = 125;
+            // 
+            // colNumber
+            // 
+            this.colNumber.HeaderText = "Primary Number";
+            this.colNumber.MinimumWidth = 6;
+            this.colNumber.Name = "colNumber";
+            this.colNumber.ReadOnly = true;
+            this.colNumber.Width = 125;
+            // 
             // buttonDelete
             // 
+            this.buttonDelete.BackColor = System.Drawing.Color.LightCoral;
             this.buttonDelete.Location = new System.Drawing.Point(79, 448);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(125, 55);
             this.buttonDelete.TabIndex = 3;
             this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.LightGreen;
             this.buttonAdd.Location = new System.Drawing.Point(277, 448);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(125, 55);
             this.buttonAdd.TabIndex = 4;
             this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.BackColor = System.Drawing.Color.SkyBlue;
             this.buttonUpdate.Location = new System.Drawing.Point(464, 448);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(125, 55);
             this.buttonUpdate.TabIndex = 5;
             this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.UseVisualStyleBackColor = false;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonDetail
             // 
+            this.buttonDetail.BackColor = System.Drawing.Color.Thistle;
             this.buttonDetail.Location = new System.Drawing.Point(791, 448);
             this.buttonDetail.Name = "buttonDetail";
             this.buttonDetail.Size = new System.Drawing.Size(125, 55);
             this.buttonDetail.TabIndex = 6;
             this.buttonDetail.Text = "Detail View";
-            this.buttonDetail.UseVisualStyleBackColor = true;
+            this.buttonDetail.UseVisualStyleBackColor = false;
             this.buttonDetail.Click += new System.EventHandler(this.buttonDetail_Click);
             // 
             // panelAddEmployee
             // 
+            this.panelAddEmployee.Controls.Add(this.labelSavedAddress);
             this.panelAddEmployee.Controls.Add(this.labelNum);
             this.panelAddEmployee.Controls.Add(this.textBoxNum);
             this.panelAddEmployee.Controls.Add(this.buttonCancelAdd);
@@ -190,16 +252,17 @@ namespace AdressVerwaltung
             this.textBoxNum.Location = new System.Drawing.Point(742, 143);
             this.textBoxNum.Name = "textBoxNum";
             this.textBoxNum.Size = new System.Drawing.Size(76, 22);
-            this.textBoxNum.TabIndex = 23;
+            this.textBoxNum.TabIndex = 7;
             // 
             // buttonCancelAdd
             // 
+            this.buttonCancelAdd.BackColor = System.Drawing.Color.LightCoral;
             this.buttonCancelAdd.Location = new System.Drawing.Point(787, 419);
             this.buttonCancelAdd.Name = "buttonCancelAdd";
             this.buttonCancelAdd.Size = new System.Drawing.Size(109, 38);
-            this.buttonCancelAdd.TabIndex = 22;
+            this.buttonCancelAdd.TabIndex = 13;
             this.buttonCancelAdd.Text = "Cancel";
-            this.buttonCancelAdd.UseVisualStyleBackColor = true;
+            this.buttonCancelAdd.UseVisualStyleBackColor = false;
             this.buttonCancelAdd.Click += new System.EventHandler(this.buttonCancelAdd_Click);
             // 
             // buttonAddEmployee
@@ -208,7 +271,7 @@ namespace AdressVerwaltung
             this.buttonAddEmployee.Location = new System.Drawing.Point(245, 402);
             this.buttonAddEmployee.Name = "buttonAddEmployee";
             this.buttonAddEmployee.Size = new System.Drawing.Size(381, 68);
-            this.buttonAddEmployee.TabIndex = 21;
+            this.buttonAddEmployee.TabIndex = 12;
             this.buttonAddEmployee.Text = "Add Employee";
             this.buttonAddEmployee.UseVisualStyleBackColor = false;
             this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
@@ -308,7 +371,7 @@ namespace AdressVerwaltung
             this.buttonAddAddress.Location = new System.Drawing.Point(485, 342);
             this.buttonAddAddress.Name = "buttonAddAddress";
             this.buttonAddAddress.Size = new System.Drawing.Size(120, 23);
-            this.buttonAddAddress.TabIndex = 10;
+            this.buttonAddAddress.TabIndex = 11;
             this.buttonAddAddress.Text = "Add Address";
             this.buttonAddAddress.UseVisualStyleBackColor = true;
             this.buttonAddAddress.Click += new System.EventHandler(this.buttonAddAddress_Click);
@@ -318,56 +381,56 @@ namespace AdressVerwaltung
             this.textBoxPrename.Location = new System.Drawing.Point(75, 91);
             this.textBoxPrename.Name = "textBoxPrename";
             this.textBoxPrename.Size = new System.Drawing.Size(260, 22);
-            this.textBoxPrename.TabIndex = 9;
+            this.textBoxPrename.TabIndex = 0;
             // 
             // textBoxAddAdd
             // 
             this.textBoxAddAdd.Location = new System.Drawing.Point(485, 299);
             this.textBoxAddAdd.Name = "textBoxAddAdd";
             this.textBoxAddAdd.Size = new System.Drawing.Size(334, 22);
-            this.textBoxAddAdd.TabIndex = 8;
+            this.textBoxAddAdd.TabIndex = 10;
             // 
             // textBoxAddCity
             // 
             this.textBoxAddCity.Location = new System.Drawing.Point(485, 250);
             this.textBoxAddCity.Name = "textBoxAddCity";
             this.textBoxAddCity.Size = new System.Drawing.Size(334, 22);
-            this.textBoxAddCity.TabIndex = 7;
+            this.textBoxAddCity.TabIndex = 9;
             // 
             // textBoxAddZIP
             // 
             this.textBoxAddZIP.Location = new System.Drawing.Point(485, 195);
             this.textBoxAddZIP.Name = "textBoxAddZIP";
             this.textBoxAddZIP.Size = new System.Drawing.Size(100, 22);
-            this.textBoxAddZIP.TabIndex = 6;
+            this.textBoxAddZIP.TabIndex = 8;
             // 
             // textBoxAddStreet
             // 
             this.textBoxAddStreet.Location = new System.Drawing.Point(485, 143);
             this.textBoxAddStreet.Name = "textBoxAddStreet";
             this.textBoxAddStreet.Size = new System.Drawing.Size(237, 22);
-            this.textBoxAddStreet.TabIndex = 5;
+            this.textBoxAddStreet.TabIndex = 6;
             // 
             // textBoxAddCat
             // 
             this.textBoxAddCat.Location = new System.Drawing.Point(485, 91);
             this.textBoxAddCat.Name = "textBoxAddCat";
             this.textBoxAddCat.Size = new System.Drawing.Size(334, 22);
-            this.textBoxAddCat.TabIndex = 4;
+            this.textBoxAddCat.TabIndex = 5;
             // 
             // dateTimePickerBirthday
             // 
             this.dateTimePickerBirthday.Location = new System.Drawing.Point(75, 297);
             this.dateTimePickerBirthday.Name = "dateTimePickerBirthday";
             this.dateTimePickerBirthday.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePickerBirthday.TabIndex = 3;
+            this.dateTimePickerBirthday.TabIndex = 4;
             // 
             // textBoxPosition
             // 
             this.textBoxPosition.Location = new System.Drawing.Point(75, 250);
             this.textBoxPosition.Name = "textBoxPosition";
             this.textBoxPosition.Size = new System.Drawing.Size(260, 22);
-            this.textBoxPosition.TabIndex = 2;
+            this.textBoxPosition.TabIndex = 3;
             // 
             // textBoxID
             // 
@@ -375,87 +438,42 @@ namespace AdressVerwaltung
             this.textBoxID.Location = new System.Drawing.Point(75, 195);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(65, 22);
-            this.textBoxID.TabIndex = 1;
+            this.textBoxID.TabIndex = 2;
             // 
             // textBoxSurname
             // 
             this.textBoxSurname.Location = new System.Drawing.Point(75, 143);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(260, 22);
-            this.textBoxSurname.TabIndex = 0;
+            this.textBoxSurname.TabIndex = 1;
             this.textBoxSurname.TextChanged += new System.EventHandler(this.textBoxSurname_TextChanged);
             // 
             // buttonCloseApp
             // 
+            this.buttonCloseApp.BackColor = System.Drawing.Color.Red;
             this.buttonCloseApp.Location = new System.Drawing.Point(1164, 453);
             this.buttonCloseApp.Name = "buttonCloseApp";
             this.buttonCloseApp.Size = new System.Drawing.Size(97, 52);
-            this.buttonCloseApp.TabIndex = 8;
+            this.buttonCloseApp.TabIndex = 23;
             this.buttonCloseApp.Text = "Close";
-            this.buttonCloseApp.UseVisualStyleBackColor = true;
+            this.buttonCloseApp.UseVisualStyleBackColor = false;
             this.buttonCloseApp.Click += new System.EventHandler(this.buttonCloseApp_Click);
             // 
-            // persID
+            // labelSavedAddress
             // 
-            this.persID.HeaderText = "Personal ID";
-            this.persID.MinimumWidth = 6;
-            this.persID.Name = "persID";
-            this.persID.ReadOnly = true;
-            this.persID.Width = 125;
-            // 
-            // colPreName
-            // 
-            this.colPreName.HeaderText = "Prename";
-            this.colPreName.MinimumWidth = 6;
-            this.colPreName.Name = "colPreName";
-            this.colPreName.ReadOnly = true;
-            this.colPreName.Width = 125;
-            // 
-            // colSurName
-            // 
-            this.colSurName.HeaderText = "Surname";
-            this.colSurName.MinimumWidth = 6;
-            this.colSurName.Name = "colSurName";
-            this.colSurName.ReadOnly = true;
-            this.colSurName.Width = 125;
-            // 
-            // colBirthday
-            // 
-            this.colBirthday.HeaderText = "Birthday";
-            this.colBirthday.MinimumWidth = 6;
-            this.colBirthday.Name = "colBirthday";
-            this.colBirthday.ReadOnly = true;
-            this.colBirthday.Width = 125;
-            // 
-            // colPosition
-            // 
-            this.colPosition.HeaderText = "Position";
-            this.colPosition.MinimumWidth = 6;
-            this.colPosition.Name = "colPosition";
-            this.colPosition.ReadOnly = true;
-            this.colPosition.Width = 125;
-            // 
-            // colAddress
-            // 
-            this.colAddress.HeaderText = "Primary Address";
-            this.colAddress.MinimumWidth = 6;
-            this.colAddress.Name = "colAddress";
-            this.colAddress.ReadOnly = true;
-            this.colAddress.Width = 125;
-            // 
-            // colNumber
-            // 
-            this.colNumber.HeaderText = "Primary Number";
-            this.colNumber.MinimumWidth = 6;
-            this.colNumber.Name = "colNumber";
-            this.colNumber.ReadOnly = true;
-            this.colNumber.Width = 125;
+            this.labelSavedAddress.AutoSize = true;
+            this.labelSavedAddress.Location = new System.Drawing.Point(675, 347);
+            this.labelSavedAddress.Name = "labelSavedAddress";
+            this.labelSavedAddress.Size = new System.Drawing.Size(117, 17);
+            this.labelSavedAddress.TabIndex = 25;
+            this.labelSavedAddress.Text = "Address Count: 0";
             // 
             // FormEmOr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1286, 515);
+            this.Controls.Add(this.panelAddEmployee);
             this.Controls.Add(this.buttonDetail);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
@@ -463,7 +481,6 @@ namespace AdressVerwaltung
             this.Controls.Add(this.buttonCloseApp);
             this.Controls.Add(this.dataGridViewEmployees);
             this.Controls.Add(this.labelDisplayNames);
-            this.Controls.Add(this.panelAddEmployee);
             this.Name = "FormEmOr";
             this.Text = "EmOr";
             this.Load += new System.EventHandler(this.FormEmOr_Load);
@@ -516,6 +533,7 @@ namespace AdressVerwaltung
         private System.Windows.Forms.DataGridViewTextBoxColumn colPosition;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNumber;
+        private System.Windows.Forms.Label labelSavedAddress;
     }
 }
 
